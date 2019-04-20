@@ -1,7 +1,14 @@
 <template>
   <div>
-    <h1>Find Lyrics</h1>
-
+    <div class="md-layout">
+      <div class="md-layout-item">
+        <h1>Find Lyrics</h1>
+      </div>
+      <div class="md-layout-item">
+        
+      </div>
+    </div>
+    
     <div class="md-layout">
       <div class="md-layout-item" v-for="item in data">
         <md-card>
@@ -10,7 +17,7 @@
           </md-card-header>
 
           <md-card-content>
-            Westlife
+            {{item.singer}}
           </md-card-content>
 
           <md-card-actions>
